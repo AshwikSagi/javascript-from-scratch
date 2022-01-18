@@ -1,5 +1,5 @@
 // npm install axios
-// node DownloadFromWeb.js --url="" --dest="download.html"
+// node DownloadFromWeb.js --url="https://www.espncricinfo.com/series/icc-cricket-world-cup-2019-1144415/match-results" --dest="download.html"
 
 let minimist=require("minimist");
 let axios=require("axios");
@@ -15,3 +15,4 @@ dwnldPromise.then(function(response){
 }).catch(function(err){
     console.log("error occured");
 });
+
