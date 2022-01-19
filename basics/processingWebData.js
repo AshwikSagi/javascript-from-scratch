@@ -15,7 +15,10 @@ fs.readFile(args.source,"utf8",function(err,html){
     // console.log(document.title);
 
     let descriptions=document.querySelectorAll("div.match-info>div.description");
+    let result=document.querySelectorAll("div.match-info>div.status-text");
     for(let i=0;i<descriptions.length;i++){
         console.log(descriptions[i].textContent);
+        console.log(result[i].textContent);
+
     }
 });
